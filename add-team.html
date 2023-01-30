@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>IPL 2023</title>
+    <link href="./new-team.css" rel="stylesheet">
+    <img src="./Assets/Background/R.png" alt="logo" class="logoo" />
+    <img src="./Assets/Background/logo2.bmp" alt="logo" class="logo" />
+    </link>
+</head>
+
+<body class="body">
+    <header>
+        <nav>
+            <ul >
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./tables.html">Teams</a></li>
+              <li><a href="./new-team.html">Create Team</a></li>
+              <li><a href="#">Teams Data</a></li>
+              <li>
+                <div>
+                    <input type="text" placeholder="Search Team" id="search-box">
+                </div>
+              </li>
+            </ul>
+          </nav>
+    </header>
+  
+
+ 
+  <table id="team" style="padding: 2px">
+    <thead>
+      <th>Team Name</th>
+      <th>Full Name</th>
+      <th>player Count</th>
+      <th>Captain</th>
+      <th>Top Batsman</th>
+      <th>Top Bolwer</th>
+      <th>Champ Won</th>
+      <th>Repres City</th>
+    </thead>
+    <tbody id="showTeams" onshow="saveTeamName()"></tbody>
+    </table>
+
+
+    <form onsubmit="return false" id="form1" style="visibility: hidden">
+      <input type="text" id="teamName" name="teamName" required /><br /><br />
+      <input type="text" id="fullName" required /><br /><br />
+      <input type="number" name="" id="playerCount" required /><br /><br />
+      <input type="text" name="" id="captain" required /><br /><br />
+      <input type="text" name="" id="tbatsman" required /><br /><br />
+      <input type="text" name="" id="tbowler" required /><br /><br />
+      <input type="number" name="" id="won" required /><br /><br />
+      <input type="text" name="" id="city" required /><br /><br />
+      <button type="submit" onshow="saveTeamName()" id="save">Submit New Team</button>
+    </form>
+     <footer style="text-align: center">@ 2023 Designed-By-shesagiri @</footer>
+    <script src="./addteam.js"></script>
+</body>
+</html>

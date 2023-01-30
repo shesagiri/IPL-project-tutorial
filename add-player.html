@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>IPL 2023</title>
+    <link href="./new-player.css" rel="stylesheet">
+    <img src="./Assets/Background/R.png" alt="logo" class="logoo" />
+    <img src="./Assets/Background/logo2.bmp" alt="logo" class="logo" />
+    </link>
+</head>
+
+<body class="body">
+    <header>
+        <nav>
+            <ul >
+              <li><a href="#">Home</a></li>
+              <li><a href="./tables.html">Teams</a></li>
+              <li><a href="./new-player.html">Create Player</a></li>
+              <li><a href="./add-player.html">Players Data</a></li>
+              <li>
+                <div>
+                    <input type="text" placeholder="Search Team" id="search-box">
+                </div>
+              </li>
+            </ul>
+          </nav>
+    </header>
+    
+  <table id="team" style="padding: 2px;">
+    <thead>
+      <th>Full Name</th>
+      <th>Team Name</th>
+      <th>Price</th>
+      <th>Role</th>
+      <th>Status</th>
+    </thead>
+    <tbody id="showPlayers"></tbody>
+    </table>
+    <form onsubmit="return false" id="form1" style="visibility: hidden">
+        <input type="text" id="fullName" required /><br /><br />
+      <input type="text" id="teamName" name="teamName" required /><br /><br />
+      <input type="number" name="" id="price" required /><br /><br />
+      <input type="text" name="" id="role" required /><br /><br />
+      <input type="text" name="" id="status" required /><br /><br />
+      <button type="submit" onclick="savePlayerName()" id="save">Submit New Team</button>
+    </form>
+    <footer style="text-align: center">@ 2022 Designed-By-shesagiri@</footer>
+    <script src="./new-player.js"></script>
+</body>
+</html>

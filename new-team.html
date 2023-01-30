@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>IPL 2023</title>
+    <link href="./new-team.css" rel="stylesheet">
+    <img src="./Assets/Background/R.png" alt="logo" class="logoo" />
+    <img src="./Assets/Background/logo2.bmp" alt="logo" class="logo" />
+    </link>
+</head>
+
+<body class="body">
+    <header>
+        <nav>
+            <ul >
+              <li><a href="#">Home</a></li>
+              <li><a href="./tables.html">Teams</a></li>
+              <li><a href="./new-team.html">Create Team</a></li>
+              <li><a href="./add-team.html">Teams Data</a></li>
+              <li>
+                <div>
+                    <input type="text" placeholder="Search Team" id="search-box">
+                </div>
+              </li>
+            </ul>
+          </nav>
+    </header>
+    <form onsubmit="return false" id="form1" style="display: none"></form>
+    <table id="card">
+    <tr>
+        <td> Enter New Team :<input type="text" id="teamName"  required /></td>
+    </tr>
+    <tr>
+        <td> Enter Full Team :&nbsp;<input type="text" id="fullName" required /></td>
+    </tr>
+    <tr>
+        <td> Players Counts : &nbsp;&nbsp;<input type="number" name="" id="playerCount" required /></td>
+    </tr>
+    <tr>
+        <td> Enter Captain :&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="" id="captain" required /></td>
+    </tr>
+    <tr>
+        <td>  Top Bastman : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="" id="tbatsman" required /></td>
+    </tr>
+    <tr>
+        <td>  Top Bolwer :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="" id="tbowler" required /></td>
+    </tr>
+    <tr>
+        <td> Champ Counts : &nbsp;&nbsp;<input type="number" name="" id="won" required /></td>
+    </tr>
+    <tr>
+        <td> Repres City :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="city"  required /></td>
+    </tr>  
+    <tr><td><button type="submit" onclick="saveTeamName()"><a href="./add-team.html">Submit</a></button></td></tr>
+  </table>
+ 
+     <footer style="text-align: center">@ 2023 Designed-By-shesagiri @</footer>
+    <script src="./new-team.js"></script>
+</body>
+</html>

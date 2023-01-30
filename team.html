@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>IPL 2023</title>
+    <link href="team.css" rel="stylesheet">
+    
+    </link>
+</head>
+
+<body>
+    <div class="head">
+      <img src="./Assets/Background/R.png" alt="logo" class="logoo" />
+      <img src="./Assets/Background/logo2.bmp" alt="logo" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./tables.html">Teams</a></li>
+          <li><a href="./new-team.html">Create Team</a></li>
+          <li><a href="./new-player.html">Create Player</a></li>
+          <li>
+            <input
+                    type="text"
+                    name=""
+                    placeholder="Search....."
+                    id="myInput"
+                    onkeyup= "searchFun()"
+                  />
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="body">
+    <div id="left">
+     
+        <img id="logo" src="./Imges/Teams/Chennai.jpg" />
+       
+        <div class="title">
+            <div>Captain</div>
+            <div id="captain" class="value"></div>
+        </div>
+        <div class="title">
+            <div>Top Batsman</div>
+            <div id="batsman" class="value"></div>
+        </div>
+        <div class="title">
+            <div>Top Bowler</div>
+            <div id="bowler" class="value"></div>
+        </div>
+        <div class="title">
+          <div>Championship Count</div>
+          <div id="count" class="value"></div>
+      </div>
+    </div>
+    <div id="right">
+    </div>
+    </div>
+    <script src="./team.js"></script>
+</body>
+
+</html>
